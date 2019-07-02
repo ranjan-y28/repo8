@@ -1,0 +1,13 @@
+package demg2.prog2;
+
+import java.lang.Number;
+
+rule "rlg2"
+	dialect "mvel"
+	when
+		dj( anme == true )
+	then
+		dj fact0 = new dj();
+		fact0.setRoll( 20 );
+		insert( fact0 );
+end
